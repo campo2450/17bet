@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17Bet - Casa de Apostas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à 17Bet!</h1>
+        <p>Faça login e aposte após realizar o pagamento via PIX.</p>
+    </header>
+    
+    <div class="login-form">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="Digite seu CPF" />
+        <button onclick="login()">Entrar</button>
+    </div>
+    
+    <div id="payment-section" class="hidden">
+        <h2>Realize um pagamento via PIX para liberar a aposta</h2>
+        <p><strong>PIX:</strong> 14895819957</p>
+        <button onclick="confirmPayment()">Confirmar pagamento</button>
+    </div>
+
+    <div id="betting-section" class="hidden">
+        <h2>Escolha sua aposta:</h2>
+        <button onclick="bet(100)">Apostar R$100</button>
+        <button onclick="bet(500)">Apostar R$500</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
