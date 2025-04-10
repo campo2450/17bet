@@ -1,5 +1,5 @@
 // Função de login (simulando a validação de CPF)
-function login(14895819957) {
+function login() {
     const cpf = document.getElementById('cpf').value;
     
     if (validateCPF(cpf)) {
