@@ -2,12 +2,12 @@
 function login() {
     const cpf = document.getElementById('cpf').value;
     
-    if (validateCPF(cpf)) {
+    if (validateCPF(login)) {
         alert("Login bem-sucedido!");
         document.querySelector('.login-form').classList.add('hidden');
         document.getElementById('payment-section').classList.remove('hidden');
     } else {
-        alert("CPF inválido!");
+        alert("login inválido!");
     }
 }
 
